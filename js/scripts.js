@@ -18,7 +18,7 @@ function getTriangleType (event) {
 
   
   if ((sumAB<= input3) || (sumBC <= input1) || (sumAC <= input2)){
-    document.getElementById('type').innerText = "This is not a triangle!";
+    document.getElementById('type2').innerText = "This is not a triangle!";
     return;
   }
   //isosceles if two sides equal
@@ -35,7 +35,7 @@ function getTriangleType (event) {
   }
 
   document.getElementById('result').removeAttribute('class');
- 
+  document.getElementById('result2').removeAttribute('class');
 }
 
 window.addEventListener('load', function(){
